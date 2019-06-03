@@ -21,7 +21,9 @@ const App = () => {
     <div className='app-container'>
       <div className='content'>
         <ResultsFilter
+          filter={filter}
           onChangeFilter={(val) => setFilter(val)}
+          sort={sort}
           onChangeSort={(val) => setSort(val)}
         />
         <ResultsList
