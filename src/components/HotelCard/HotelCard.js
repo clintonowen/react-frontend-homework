@@ -1,5 +1,6 @@
 import React from 'react';
 import './HotelCard.style.scss';
+import noImage from '../../assets/no-image.jpg';
 
 const HotelCard = (props) => {
   return (
@@ -7,7 +8,7 @@ const HotelCard = (props) => {
       <div
         className='image'
         style={{
-          backgroundImage: `url(${props.hotel.hotelStaticContent.mainImage.url})`
+          backgroundImage: `url(${props.hotel.hotelStaticContent.mainImage.url}), url(${noImage})`
         }}
       />
       <div className='hotel-details'>

@@ -24,7 +24,7 @@ const App = () => {
         } else {
           setError(true);
         }
-      }, 3000);
+      }, 2500);
     });
   }, []);
 
