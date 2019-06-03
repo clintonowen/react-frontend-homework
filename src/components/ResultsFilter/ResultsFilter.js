@@ -1,4 +1,5 @@
 import React from 'react';
+import './ResultsFilter.style.scss';
 
 const ResultsFilter = () => {
   return (
