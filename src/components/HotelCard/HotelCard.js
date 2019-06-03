@@ -3,7 +3,7 @@ import './HotelCard.style.scss';
 
 const HotelCard = (props) => {
   return (
-    <div className='hotel-card' key={props.hotel.id}>
+    <div className='hotel-card'>
       <div
         className='image'
         style={{
