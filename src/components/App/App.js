@@ -9,6 +9,7 @@ import hotelResultService from '../../services/hotel-result/hotel-result.service
 const App = () => {
   const [hotels, setHotels] = useState([]);
   const [filter, setFilter] = useState('');
+  const [sort, setSort] = useState('rec');
 
   useEffect(() => {
     hotelResultService.get().then(response => {
@@ -19,8 +20,15 @@ const App = () => {
   return (
     <div className='app-container'>
       <div className='content'>
-        <ResultsFilter onChangeFilter={(val) => setFilter(val)} />
-        <ResultsList hotels={hotels} filter={filter} />
+        <ResultsFilter
+          onChangeFilter={(val) => setFilter(val)}
+          onChangeSort={(val) => setSort(val)}
+        />
+        <ResultsList
+          hotels={hotels}
+          filter={filter}
+          sort={sort}
+        />
       </div>
     </div>
   );

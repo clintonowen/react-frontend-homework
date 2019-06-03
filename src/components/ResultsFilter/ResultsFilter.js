@@ -11,11 +11,15 @@ const ResultsFilter = (props) => {
           className='input'
           onChange={e => props.onChangeFilter(e.target.value)}
         />
-        Price
-        <select name='' className='select'>
-          <option value=''>Recommended</option>
-          <option value=''>Price low-to-high</option>
-          <option value=''>Price high-to-low</option>
+        Sort by
+        <select
+          name='sort'
+          className='select'
+          onChange={e => props.onChangeSort(e.target.value)}
+        >
+          <option value='rec'>Recommended</option>
+          <option value='low'>Price low-to-high</option>
+          <option value='high'>Price high-to-low</option>
         </select>
         <button className='button'>Reset</button>
       </div>
