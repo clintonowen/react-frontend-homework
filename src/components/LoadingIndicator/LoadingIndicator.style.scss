@@ -1,0 +1,95 @@
+.loading-indicator-container {
+  position: relative;
+  min-width: 132px;
+  top: 80px;
+  font-weight: 500;
+}
+.loading-indicator-container .rm-spinner {
+  margin: 10px auto;
+  text-align: center;
+}
+.loading-indicator-container .rm-spinner > div {
+  display: inline-block;
+}
+.loading-indicator-container .rm-spinner .left-animate,
+.loading-indicator-container .rm-spinner .right-animate {
+  vertical-align: top;
+}
+.loading-indicator-container .rm-spinner .left-animate > div {
+  margin-right: 0;
+  margin-left: auto;
+}
+.loading-indicator-container .rm-spinner .rect1 {
+  animation: scale-down-rect1-animation 1.25s infinite ease-in-out;
+  width: 6.11111111px;
+}
+@keyframes scale-down-rect1-animation {
+  85% {
+    transform: scale(0.85, 0);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+.loading-indicator-container .rm-spinner .rect2 {
+  animation: scale-down-rect2-animation 1.25s infinite ease-in-out;
+  width: 14.66666667px;
+}
+@keyframes scale-down-rect2-animation {
+  66% {
+    transform: scale(0.8, 0);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+.loading-indicator-container .rm-spinner .rect3 {
+  animation: scale-down-rect3-animation 1.25s infinite ease-in-out;
+  width: 22px;
+}
+@keyframes scale-down-rect3-animation {
+  33% {
+    transform: scale(0.75, 0);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+.loading-indicator-container .rm-spinner .letter {
+  animation: animateScale 1.25s linear infinite alternate;
+  position: relative;
+  color: white;
+  font-size: 40px;
+  line-height: 26.66666667px;
+  padding: 0 3px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@keyframes animateScale {
+  50% {
+    transform: scale(0.925);
+  }
+}
+.loading-indicator-container .rm-spinner [class^="rect"] {
+  background-color: white;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: 3px;
+  transform-origin: left top;
+}
+.loading-indicator-container .rm-spinner .left-animate [class^="rect"] {
+  transform-origin: right top;
+}
+.loading-indicator-container .rm-spinner .load-text {
+  display: block;
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.loading-indicator-container .loading-indicator {
+  position: relative;
+  top: -55px;
+}
+.loading-indicator-container .loading-backdrop {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: auto;
+}

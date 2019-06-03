@@ -2,4 +2,9 @@
   > *:not(:last-child) {
       margin-bottom: 10px;
   }
+
+  .no-results {
+    margin-top: 10px;
+    text-align: center;
+  }
 }
