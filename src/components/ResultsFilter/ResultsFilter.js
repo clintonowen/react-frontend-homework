@@ -1,12 +1,16 @@
 import React from 'react';
 import './ResultsFilter.style.scss';
 
-const ResultsFilter = () => {
+const ResultsFilter = (props) => {
   return (
     <div>
       <div className='filters'>
         Hotel name
-        <input type='text' className='input' maxLength={1} />
+        <input
+          type='text'
+          className='input'
+          onChange={e => props.onChangeFilter(e.target.value)}
+        />
         Price
         <select name='' className='select'>
           <option value=''>Recommended</option>
