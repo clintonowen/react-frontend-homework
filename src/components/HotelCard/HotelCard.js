@@ -1,6 +1,6 @@
 import React from 'react';
 import './HotelCard.style.scss';
-import noImage from '../../assets/no-image.jpg';
+const noImage = require('../../assets/no-image.jpg');
 
 const HotelCard = (props) => {
   return (
