@@ -1,4 +1,4 @@
-# Rocketmiles - React Technical Assesment
+# React Technical Assessment
 
 ## Development server
 
